@@ -1,4 +1,3 @@
-
 export function Beep(number, displayResults) {
   this.number = number;
   this.displayResults = displayResults;
@@ -8,20 +7,18 @@ export function Beep(number, displayResults) {
 Beep.prototype.tooBig = function() {
   if (this.number > 30) {
     this.displayResults("You're being unreasonable, Dave.  That number is too large");
-    $("#inputString").val("");
   } else {
     this.countDown(this.number);
   }
-}
+};
 
 Beep.prototype.countDown = function() {
   for (var i = this.number; i >= 0; i -= 1) {
     this.numCheck(i);
-    $("#inputString").val("");
   }
-}
+};
 
-function numCheck(i) {
+Beep.prototype.numCheck = function(i) {
   var divThree = i%3 === 0 ;
   var stringI = i.toString();
   var splitNumber = stringI.split("");
@@ -36,4 +33,4 @@ function numCheck(i) {
   } else {
     this.displayResults(i);
   }
-}
+};

@@ -8,18 +8,19 @@ $(document).ready(function() {
   $("#submit").click(function(e) {
     e.preventDefault();
     $("#output").text("");
-      var makeInt = parseInt($("#inputString").val());
-      var newBeep = new Beep(makeInt, displayResults);
-      newBeep.tooBig();
+    var makeInt = parseInt($("#inputString").val());
+    var newBeep = new Beep(makeInt, displayResults);
+    newBeep.tooBig();
 
   });
 
   $("#reset").click(function(e) {
     e.preventDefault();
     location.reload();
-  })
+  });
 });
 
 function displayResults(i) {
   $("#output").append("<li>" + i + "</li>");
-};
+  $("#inputString").val("");
+}
