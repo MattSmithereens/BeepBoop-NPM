@@ -1,7 +1,7 @@
 {
-  "name": "triangle-tracker",
+  "name": "beep",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### Epicodus Intro to Programming: Weekly Independent Project Friday June 8th, 2018",
   "main": "main.js",
   "scripts": {
     "test": "karma start karma.conf.js",
@@ -14,11 +14,8 @@
     "type": "git"
   },
   "keywords": [],
-  "author": "",
-  "license": "",
-  "bugs": {
-    "url": ""
-  },
+  "author": "Matt Smith & Craig Wann",
+  "license": "MIT",
   "homepage": "",
   "devDependencies": {
     "babel-core": "^6.26.0",

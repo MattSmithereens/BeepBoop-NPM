@@ -3,7 +3,6 @@ export function Beep(number, displayResults) {
   this.displayResults = displayResults;
 }
 
-
 Beep.prototype.tooBig = function() {
   if (this.number > 30) {
     this.displayResults("You're being unreasonable, Dave.  That number is too large");
