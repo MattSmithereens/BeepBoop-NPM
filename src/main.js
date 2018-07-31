@@ -9,7 +9,7 @@ $(document).ready(function() {
     e.preventDefault();
     $("#output").text("");
     var makeInt = parseInt($("#inputString").val());
-    var newBeep = new Beep(makeInt, displayResults);
+    var newBeep = new Beep(makeInt);
     newBeep.tooBig();
 
   });
@@ -19,8 +19,3 @@ $(document).ready(function() {
     location.reload();
   });
 });
-
-function displayResults(i) {
-  $("#output").append("<li>" + i + "</li>");
-  $("#inputString").val("");
-}
